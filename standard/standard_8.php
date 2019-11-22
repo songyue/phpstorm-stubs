@@ -1112,30 +1112,23 @@ function array_unshift (array &$array, ...$vars) {}
 function array_splice (array &$input, $offset, $length = null, $replacement = null) {}
 
 /**
- * Extract a slice of the array
+ * 从数组中取出一段
  * @link https://php.net/manual/zh/function.array-slice.php
  * @param array $array <p>
- * The input array.
+ * 输入的数组。
  * </p>
  * @param int $offset <p>
- * If offset is non-negative, the sequence will
- * start at that offset in the array. If
- * offset is negative, the sequence will
- * start that far from the end of the array.
+ * 如果 offset 非负，则序列将从 array 中的此偏移量开始。
+ * 如果 offset 为负，则序列将从 array 中距离末端这么远的地方开始。
  * </p>
  * @param int $length [optional] <p>
- * If length is given and is positive, then
- * the sequence will have that many elements in it. If
- * length is given and is negative then the
- * sequence will stop that many elements from the end of the
- * array. If it is omitted, then the sequence will have everything
- * from offset up until the end of the
- * array.
+ * 如果给出了 length 并且为正，则序列中将具有这么多的单元。
+ * 如果给出了 length 并且为负，则序列将终止在距离数组末端这么远的地方。
+ * 如果省略，则序列将从 offset 开始一直到 array 的末端。
  * </p>
  * @param bool $preserve_keys [optional] <p>
- * Note that array_slice will reorder and reset the
- * array indices by default. You can change this behaviour by setting
- * preserve_keys to true.
+ * 注意 array_slice() 默认会重新排序并重置数组的数字索引。
+ * 你可以通过将 preserve_keys 设为 TRUE 来改变此行为。
  * </p>
  * @return array the slice.
  * @since 4.0
@@ -1144,14 +1137,15 @@ function array_splice (array &$input, $offset, $length = null, $replacement = nu
 function array_slice (array $array, $offset, $length = null, $preserve_keys = false) {}
 
 /**
- * Merge one or more arrays
+ * array_merge — 合并一个或多个数组
  * @link https://php.net/manual/zh/function.array-merge.php
  * @param array $array1 <p>
- * Initial array to merge.
+ * 要合并的第一个数组.
+ *
  * </p>
  * @param array $array2 [optional] 
  * @param array $_ [optional] 
- * @return array the resulting array.
+ * @return array 返回结果数组。
  * @since 4.0
  * @since 5.0
  */
