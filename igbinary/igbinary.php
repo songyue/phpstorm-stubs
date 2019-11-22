@@ -32,7 +32,7 @@ function igbinary_serialize($value) {}
  *
  * @param string $str The serialized string.
  * @return mixed The converted value is returned, and can be a boolean, integer, float, string, array or object.
- * @link https://secure.php.net/manual/en/function.unserialize.php PHP default unserialize
+ * @link https://secure.php.net/manual/zh/function.unserialize.php PHP default unserialize
  * @link https://secure.php.net/~helly/php/ext/spl/interfaceSerializable.html Serializable
  */
 function igbinary_unserialize($str) {}

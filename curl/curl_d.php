@@ -1,6 +1,6 @@
 <?php
 
-//TODO: copy proper descriptions for all constants from https://php.net/manual/en/function.curl-setopt.php
+//TODO: copy proper descriptions for all constants from https://php.net/manual/zh/function.curl-setopt.php
 
 /**
  * A bitmask consisting of one or more of
@@ -14,7 +14,7 @@ define('CURLOPT_SSH_AUTH_TYPES', 151);
 
 /**
  * @since 5.5
- * @link https://php.net/manual/en/function.curl-setopt.php
+ * @link https://php.net/manual/zh/function.curl-setopt.php
  * <b>TRUE</b> tells the library to perform all the required proxy authentication
  * and connection setup, but no data transfer. This option is implemented for
  * HTTP, SMTP and POP3.
@@ -44,7 +44,7 @@ define('CURLINFO_LOCAL_IP', 1048617);
 define('CURLINFO_LOCAL_PORT', 2097194);
 /**
  * A result of {@see curl_share_init()}. Makes the cURL handle to use the data from the shared handle.
- * @link https://php.net/manual/en/function.curl-setopt.php
+ * @link https://php.net/manual/zh/function.curl-setopt.php
  * @since 5.5
  */
 define ('CURLOPT_SHARE', 10100);
@@ -67,7 +67,7 @@ define ('CURLOPT_HTTPHEADER', 10023);
 define ('CURLOPT_NOPROGRESS', 43);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 5.3
  */
 define ('CURLOPT_PROGRESSFUNCTION', 20056);
@@ -80,7 +80,7 @@ define ('CURLOPT_FTPAPPEND', 50);
 define ('CURLOPT_NETRC', 51);
 
 /**
- * @link https://secure.php.net/manual/en/function.curl-setopt.php
+ * @link https://secure.php.net/manual/zh/function.curl-setopt.php
  * @since 5.3.2
  */
 define ('CURLOPT_POSTREDIR', 161);
@@ -96,7 +96,7 @@ define ('CURLOPT_PASSWDFUNCTION', -1);
 /**
  * This constant is not available when open_basedir 
  * or safe_mode are enabled.
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  */
 define ('CURLOPT_FOLLOWLOCATION', 52);
 define ('CURLOPT_PUT', 54);
@@ -108,15 +108,15 @@ define ('CURLOPT_TIMEOUT_MS', 155);
 define ('CURLOPT_POSTFIELDS', 10015);
 define ('CURLOPT_REFERER', 10016);
 /**
- * @link https://php.net/manual/en/function.curl-setopt.php
+ * @link https://php.net/manual/zh/function.curl-setopt.php
  */
 define ('CURLOPT_SSH_HOST_PUBLIC_KEY_MD5', 10162);
 /**
- * @link https://php.net/manual/en/function.curl-setopt.php
+ * @link https://php.net/manual/zh/function.curl-setopt.php
  */
 define ('CURLOPT_SSH_PUBLIC_KEYFILE', 10152);
 /**
- * @link https://php.net/manual/en/function.curl-setopt.php
+ * @link https://php.net/manual/zh/function.curl-setopt.php
  */
 define ('CURLOPT_SSH_PRIVATE_KEYFILE', 10153);
 define ('CURLOPT_USERAGENT', 10018);
@@ -128,13 +128,13 @@ define ('CURLOPT_RESUME_FROM', 21);
 define ('CURLOPT_COOKIE', 10022);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 5.1
  */
 define ('CURLOPT_COOKIESESSION', 96);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 5.1
  */
 define ('CURLOPT_AUTOREFERER', 58);
@@ -215,7 +215,7 @@ define ('CURLOPT_UNRESTRICTED_AUTH', 105);
 define ('CURLOPT_FTP_USE_EPRT', 106);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 5.2.1
  */
 define ('CURLOPT_TCP_NODELAY', 121);
@@ -234,104 +234,104 @@ define ('CURLOPT_PROXYAUTH', 111);
 define ('CURLOPT_FTP_CREATE_MISSING_DIRS', 110);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 5.2.4
  */
 define ('CURLOPT_PRIVATE', 10103);
 
 /**
  * The last response code
- * @link https://php.net/manual/en/function.curl-getinfo.php
+ * @link https://php.net/manual/zh/function.curl-getinfo.php
  * @since 5.5
  */
 define ('CURLINFO_RESPONSE_CODE', 2097154);
 /**
  * The CONNECT response code
- * @link https://php.net/manual/en/function.curl-getinfo.php
+ * @link https://php.net/manual/zh/function.curl-getinfo.php
  * @since 5.5
  */
 define ('CURLINFO_HTTP_CONNECTCODE', 2097174);
 /**
  * Bitmask indicating the authentication method(s) available according to the previous response
- * @link https://php.net/manual/en/function.curl-getinfo.php
+ * @link https://php.net/manual/zh/function.curl-getinfo.php
  * @since 5.5
  */
 define ('CURLINFO_HTTPAUTH_AVAIL', 2097175);
 /**
  * Bitmask indicating the proxy authentication method(s) available according to the previous response
- * @link https://php.net/manual/en/function.curl-getinfo.php
+ * @link https://php.net/manual/zh/function.curl-getinfo.php
  * @since 5.5
  */
 define ('CURLINFO_PROXYAUTH_AVAIL', 2097176);
 /**
  * Errno from a connect failure. The number is OS and system specific.
- * @link https://php.net/manual/en/function.curl-getinfo.php
+ * @link https://php.net/manual/zh/function.curl-getinfo.php
  * @since 5.5
  */
 define ('CURLINFO_OS_ERRNO', 2097177);
 /**
  * Number of connections curl had to create to achieve the previous transfer
- * @link https://php.net/manual/en/function.curl-getinfo.php
+ * @link https://php.net/manual/zh/function.curl-getinfo.php
  * @since 5.5
  */
 define ('CURLINFO_NUM_CONNECTS', 2097178);
 /**
  * OpenSSL crypto-engines supported
- * @link https://php.net/manual/en/function.curl-getinfo.php
+ * @link https://php.net/manual/zh/function.curl-getinfo.php
  * @since 5.5
  */
 define ('CURLINFO_SSL_ENGINES', 4194331);
 /**
  * All known cookies
- * @link https://php.net/manual/en/function.curl-getinfo.php
+ * @link https://php.net/manual/zh/function.curl-getinfo.php
  * @since 5.5
  */
 define ('CURLINFO_COOKIELIST', 4194332);
 /**
  * Entry path in FTP server
- * @link https://php.net/manual/en/function.curl-getinfo.php
+ * @link https://php.net/manual/zh/function.curl-getinfo.php
  * @since 5.5
  */
 define ('CURLINFO_FTP_ENTRY_PATH', 1048606);
 /**
  * Time in seconds it took from the start until the SSL/SSH connect/handshake to the remote host was completed
- * @link https://php.net/manual/en/function.curl-getinfo.php
+ * @link https://php.net/manual/zh/function.curl-getinfo.php
  * @since 5.5
  */
 define ('CURLINFO_APPCONNECT_TIME',3145761);
 /**
  * TLS certificate chain
- * @link https://php.net/manual/en/function.curl-getinfo.php
+ * @link https://php.net/manual/zh/function.curl-getinfo.php
  * @since 5.5
  */
 define ('CURLINFO_CERTINFO', 4194338);
 /**
  * Info on unmet time conditional
- * @link https://php.net/manual/en/function.curl-getinfo.php
+ * @link https://php.net/manual/zh/function.curl-getinfo.php
  * @since 5.5
  */
 define ('CURLINFO_CONDITION_UNMET', 2097187);
 /**
  * Next RTSP client CSeq
- * @link https://php.net/manual/en/function.curl-getinfo.php
+ * @link https://php.net/manual/zh/function.curl-getinfo.php
  * @since 5.5
  */
 define ('CURLINFO_RTSP_CLIENT_CSEQ', 2097189);
 /**
  * Recently received CSeq
- * @link https://php.net/manual/en/function.curl-getinfo.php
+ * @link https://php.net/manual/zh/function.curl-getinfo.php
  * @since 5.5
  */
 define ('CURLINFO_RTSP_CSEQ_RECV', 2097191);
 /**
  * Next RTSP server CSeq
- * @link https://php.net/manual/en/function.curl-getinfo.php
+ * @link https://php.net/manual/zh/function.curl-getinfo.php
  * @since 5.5
  */
 define ('CURLINFO_RTSP_SERVER_CSEQ', 2097190);
 /**
  * RTSP session ID
- * @link https://php.net/manual/en/function.curl-getinfo.php
+ * @link https://php.net/manual/zh/function.curl-getinfo.php
  * @since 5.5
  */
 define ('CURLINFO_RTSP_SESSION_ID', 1048612);
@@ -362,13 +362,13 @@ define ('CURLINFO_REDIRECT_TIME', 3145747);
 define ('CURLINFO_REDIRECT_COUNT', 2097172);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 5.1.3
  */
 define ('CURLINFO_HEADER_OUT', 2);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 5.2.4
  */
 define ('CURLINFO_PRIVATE', 1048597);
@@ -461,55 +461,55 @@ define ('CURLM_INTERNAL_ERROR', 4);
 define ('CURLMSG_DONE', 1);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 5.1
  */
 define ('CURLOPT_FTPSSLAUTH', 129);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 5.1
  */
 define ('CURLFTPAUTH_DEFAULT', 0);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 5.1
  */
 define ('CURLFTPAUTH_SSL', 1);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 5.1
  */
 define ('CURLFTPAUTH_TLS', 2);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 5.2
  */
 define ('CURLOPT_FTP_SSL', 119);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 5.2
  */
 define ('CURLFTPSSL_NONE', 0);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 5.2
  */
 define ('CURLFTPSSL_TRY', 1);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 5.2
  */
 define ('CURLFTPSSL_CONTROL', 2);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 5.2
  */
 define ('CURLFTPSSL_ALL', 3);
@@ -535,13 +535,13 @@ define ('CURLPROTO_TFTP', 2048);
 define ('CURLPROTO_ALL', -1);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 5.5
  */
 define ('CURLMOPT_PIPELINING', 3);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 5.5
  */
 define ('CURLMOPT_MAXCONNECTS', 6);
@@ -556,531 +556,531 @@ define ('CURLOPT_KEYPASSWD', 10026);
 
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURLFTP_CREATE_DIR', 1);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURLFTP_CREATE_DIR_NONE', 0);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURLAUTH_NTLM_WB', 32);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURL_HTTP_VERSION_2', 3);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURL_HTTP_VERSION_2TLS', 4);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURL_HTTP_VERSION_2_PRIOR_KNOWLEDGE', 5);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURLOPT_SASL_IR', 218);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURLOPT_DNS_INTERFACE', 10221);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURLOPT_DNS_LOCAL_IP4', 10222);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURLOPT_DNS_LOCAL_IP6', 10223);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURLOPT_XOAUTH2_BEARER', 10220);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURLOPT_LOGIN_OPTIONS', 10224);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURLOPT_EXPECT_100_TIMEOUT_MS', 227);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURLOPT_SSL_ENABLE_ALPN', 226);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURLOPT_SSL_ENABLE_NPN', 225);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURLOPT_PINNEDPUBLICKEY', 10230);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURLOPT_UNIX_SOCKET_PATH', 10231);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURLOPT_SSL_VERIFYSTATUS', 232);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURLOPT_PATH_AS_IS', 234);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURLOPT_SSL_FALSESTART', 233);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURLOPT_PIPEWAIT', 237);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURLOPT_PROXY_SERVICE_NAME', 10235);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURLOPT_SERVICE_NAME', 10236);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURLSSH_AUTH_AGENT', 16);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURLPIPE_NOTHING', 0);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURLPIPE_HTTP1', 1);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURLPIPE_MULTIPLEX', 2);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURLHEADER_SEPARATE', 1);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURLHEADER_UNIFIED', 0);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURLPROTO_SMB', 67108864);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURLPROTO_SMBS', 134217728);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURLOPT_HEADEROPT', 229);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURLOPT_PROXYHEADER', 10228);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURL_REDIR_POST_301', 1);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURL_REDIR_POST_302', 2);
 
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURL_REDIR_POST_303', 4);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURLPROXY_HTTP_1_0',1);
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURL_REDIR_POST_ALL', 7);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define ('CURLMOPT_CHUNK_LENGTH_PENALTY_SIZE', 30010);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define ('CURLMOPT_CONTENT_LENGTH_PENALTY_SIZE', 30009);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURLMOPT_MAX_HOST_CONNECTIONS', 7);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURLMOPT_MAX_PIPELINE_LENGTH', 8);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURLMOPT_MAX_TOTAL_CONNECTIONS', 13);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define ('CURLFTP_CREATE_DIR_RETRY', 2);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.0.7
  */
 define('CURLAUTH_NEGOTIATE', 4);
 
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.1
  */
 
 define('CURLMOPT_PUSHFUNCTION', 20014);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.1
  */
 define('CURL_PUSH_OK', 0);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.1
  */
 define('CURL_PUSH_DENY',1);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURL_MAX_READ_SIZE', 524288);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURLOPT_ABSTRACT_UNIX_SOCKET', 10264);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURL_SSLVERSION_MAX_DEFAULT', 65536);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURL_SSLVERSION_MAX_NONE', 0);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURL_SSLVERSION_MAX_TLSv1_0', 262144);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURL_SSLVERSION_MAX_TLSv1_1', 327680);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURL_SSLVERSION_MAX_TLSv1_2', 393216);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURL_SSLVERSION_MAX_TLSv1_3', 458752);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURLOPT_SUPPRESS_CONNECT_HEADERS', 265);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURLAUTH_GSSAPI', 4);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURLINFO_CONTENT_LENGTH_DOWNLOAD_T', 6291471);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURLINFO_CONTENT_LENGTH_UPLOAD_T', 6291472);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURLINFO_SIZE_DOWNLOAD_T', 6291464);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURLINFO_SIZE_UPLOAD_T', 6291463);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURLINFO_SPEED_DOWNLOAD_T', 6291465);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURLINFO_SPEED_UPLOAD_T', 6291466);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURLOPT_REQUEST_TARGET', 10266);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURLOPT_SOCKS5_AUTH', 267);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURLOPT_SSH_COMPRESSION', 268);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURL_VERSION_MULTI_SSL', 4194304);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURL_VERSION_BROTLI', 8388608);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURL_LOCK_DATA_CONNECT', 5);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURLSSH_AUTH_GSSAPI', 32);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURLINFO_FILETIME_T', 6291470);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURLOPT_HAPPY_EYEBALLS_TIMEOUT_MS', 271);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURLOPT_TIMEVALUE_LARGE', 30270);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURLOPT_DNS_SHUFFLE_ADDRESSES', 275);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURLOPT_HAPROXYPROTOCOL', 274);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURL_LOCK_DATA_PSL', 6);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURLAUTH_BEARER', 64);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURLINFO_APPCONNECT_TIME_T', 6291512);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURLINFO_CONNECT_TIME_T', 6291508);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURLINFO_NAMELOOKUP_TIME_T', 6291507);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURLINFO_PRETRANSFER_TIME_T', 6291509);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURLINFO_REDIRECT_TIME_T', 6291511);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURLINFO_STARTTRANSFER_TIME_T', 6291510);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURLINFO_TOTAL_TIME_T', 6291506);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURLOPT_DISALLOW_USERNAME_IN_URL', 278);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURLOPT_PROXY_TLS13_CIPHERS', 10277);
 
 /**
- * @link https://php.net/manual/en/curl.constants.php
+ * @link https://php.net/manual/zh/curl.constants.php
  * @since 7.3
  */
 define('CURLOPT_TLS13_CIPHERS', 10276);

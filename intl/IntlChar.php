@@ -734,7 +734,7 @@ class IntlChar {
     public static function charDirection($codepoint) {}
 
     /**
-     * @link https://php.net/manual/en/intlchar.charfromname.php
+     * @link https://php.net/manual/zh/intlchar.charfromname.php
      * Find Unicode character by name and return its code point value
      * @param string $characterName <p>Full name of the Unicode character.</p>
      * @param int $nameChoice [optional] <p>
@@ -885,7 +885,7 @@ class IntlChar {
 
     /**
      * Perform case folding on a code point
-     * @link https://php.net/manual/en/intlchar.foldcase.php
+     * @link https://php.net/manual/zh/intlchar.foldcase.php
      * @param mixed $codepoint The integer codepoint value (e.g. 0x2603 for U+2603 SNOWMAN), or the character encoded as a UTF-8 string (e.g. "\u{2603}")
      * @param int $options [optional] Either IntlChar::FOLD_CASE_DEFAULT (default) or IntlChar::FOLD_CASE_EXCLUDE_SPECIAL_I.
      * @return mixed Returns the Simple_Case_Folding of the code point, if any; otherwise the code point itself.
@@ -1318,7 +1318,7 @@ class IntlChar {
 
     /**
      * Make Unicode character lowercase
-     * @link https://php.net/manual/en/intlchar.tolower.php
+     * @link https://php.net/manual/zh/intlchar.tolower.php
      * @param mixed $codepoint
      * @return mixed Returns the Simple_Lowercase_Mapping of the code point, if any; otherwise the code point itself.
      * The return type will be integer unless the code point was passed as a UTF-8 string, in which case a string will be returned.

@@ -2,7 +2,7 @@
 
 /**
  * Zookeeper class.
- * @link https://www.php.net/manual/en/class.zookeeper.php
+ * @link https://www.php.net/manual/zh/class.zookeeper.php
  */
 class Zookeeper
 {
@@ -78,7 +78,7 @@ class Zookeeper
      * @param callable $watcher_cb
      * @param int      $recv_timeout
      *
-     * @link https://www.php.net/manual/en/zookeeper.construct.php
+     * @link https://www.php.net/manual/zh/zookeeper.construct.php
      *
      * @throws ZookeeperException
      * @throws ZookeeperConnectionException when host is provided and when failed to connect to the host
@@ -94,7 +94,7 @@ class Zookeeper
      * @param callable $watcher_cb
      * @param int      $recv_timeout
      *
-     * @link https://www.php.net/manual/en/zookeeper.connect.php
+     * @link https://www.php.net/manual/zh/zookeeper.connect.php
      *
      * @throws ZookeeperException
      * @throws ZookeeperConnectionException when failed to connect to Zookeeper
@@ -106,7 +106,7 @@ class Zookeeper
     /**
      * Close the zookeeper handle and free up any resources.
      *
-     * @link https://www.php.net/manual/en/zookeeper.close.php
+     * @link https://www.php.net/manual/zh/zookeeper.close.php
      *
      * @throws ZookeeperException
      * @throws ZookeeperConnectionException when closing an uninitialized instance
@@ -125,7 +125,7 @@ class Zookeeper
      *
      * @return string
      *
-     * @link https://www.php.net/manual/en/zookeeper.create.php
+     * @link https://www.php.net/manual/zh/zookeeper.create.php
      *
      * @throws ZookeeperException
      * @throws ZookeeperNoNodeException when parent path does not exist
@@ -142,7 +142,7 @@ class Zookeeper
      *
      * @return bool
      *
-     * @link https://www.php.net/manual/en/zookeeper.delete.php
+     * @link https://www.php.net/manual/zh/zookeeper.delete.php
      *
      * @throws ZookeeperException
      * @throws ZookeeperNoNodeException when path does not exist
@@ -161,7 +161,7 @@ class Zookeeper
      *
      * @return bool
      *
-     * @link https://www.php.net/manual/en/zookeeper.set.php
+     * @link https://www.php.net/manual/zh/zookeeper.set.php
      *
      * @throws ZookeeperException
      * @throws ZookeeperNoNodeException when path does not exist
@@ -180,7 +180,7 @@ class Zookeeper
      *
      * @return string
      *
-     * @link https://www.php.net/manual/en/zookeeper.get.php
+     * @link https://www.php.net/manual/zh/zookeeper.get.php
      *
      * @throws ZookeeperException
      * @throws ZookeeperNoNodeException when path does not exist
@@ -197,7 +197,7 @@ class Zookeeper
      *
      * @return array
      *
-     * @link https://www.php.net/manual/en/zookeeper.getchildren.php
+     * @link https://www.php.net/manual/zh/zookeeper.getchildren.php
      *
      * @throws ZookeeperException       when connection not in connected status
      * @throws ZookeeperNoNodeException when path does not exist
@@ -214,7 +214,7 @@ class Zookeeper
      *
      * @return bool
      *
-     * @link https://www.php.net/manual/en/zookeeper.exists.php
+     * @link https://www.php.net/manual/zh/zookeeper.exists.php
      *
      * @throws ZookeeperException
      */
@@ -229,7 +229,7 @@ class Zookeeper
      *
      * @return array
      *
-     * @link https://www.php.net/manual/en/zookeeper.getacl.php
+     * @link https://www.php.net/manual/zh/zookeeper.getacl.php
      *
      * @throws ZookeeperException when connection not in connected status
      */
@@ -244,7 +244,7 @@ class Zookeeper
      * @param int    $version
      * @param array  $acls
      *
-     * @link https://www.php.net/manual/en/zookeeper.setacl.php
+     * @link https://www.php.net/manual/zh/zookeeper.setacl.php
      *
      * @return bool
      *
@@ -260,7 +260,7 @@ class Zookeeper
      *
      * @return int
      *
-     * @link https://www.php.net/manual/en/zookeeper.getclientid.php
+     * @link https://www.php.net/manual/zh/zookeeper.getclientid.php
      *
      * @throws ZookeeperException
      * @throws ZookeeperConnectionException when connection not in connected status
@@ -276,7 +276,7 @@ class Zookeeper
      *
      * @return bool
      *
-     * @link https://www.php.net/manual/en/zookeeper.setwatcher.php
+     * @link https://www.php.net/manual/zh/zookeeper.setwatcher.php
      *
      * @throws ZookeeperException
      * @throws ZookeeperConnectionException when connection not in connected status
@@ -290,7 +290,7 @@ class Zookeeper
      *
      * @return int
      *
-     * @link https://www.php.net/manual/en/zookeeper.getstate.php
+     * @link https://www.php.net/manual/zh/zookeeper.getstate.php
      *
      * @throws ZookeeperException
      * @throws ZookeeperConnectionException when connection not in connected status
@@ -305,7 +305,7 @@ class Zookeeper
      *
      * @return int
      *
-     * @link https://www.php.net/manual/en/zookeeper.getrecvtimeout.php
+     * @link https://www.php.net/manual/zh/zookeeper.getrecvtimeout.php
      *
      * @throws ZookeeperException
      * @throws ZookeeperConnectionException when connection not in connected status
@@ -321,7 +321,7 @@ class Zookeeper
      * @param string   $cert
      * @param callable $completion_cb
      *
-     * @link https://www.php.net/manual/en/zookeeper.addauth.php
+     * @link https://www.php.net/manual/zh/zookeeper.addauth.php
      *
      * @return bool
      *
@@ -337,7 +337,7 @@ class Zookeeper
      *
      * @return bool
      *
-     * @link https://www.php.net/manual/en/zookeeper.isrecoverable.php
+     * @link https://www.php.net/manual/zh/zookeeper.isrecoverable.php
      *
      * @throws ZookeeperException
      * @throws ZookeeperConnectionException when connection not in connected status
@@ -353,7 +353,7 @@ class Zookeeper
      *
      * @param resource $file
      *
-     * @link https://www.php.net/manual/en/zookeeper.setlogstream.php
+     * @link https://www.php.net/manual/zh/zookeeper.setlogstream.php
      *
      * @return bool
      */
@@ -366,7 +366,7 @@ class Zookeeper
      *
      * @param int $level
      *
-     * @link https://www.php.net/manual/en/zookeeper.setdebuglevel.php
+     * @link https://www.php.net/manual/zh/zookeeper.setdebuglevel.php
      *
      * @return bool
      */
@@ -379,7 +379,7 @@ class Zookeeper
      *
      * @param bool $trueOrFalse
      *
-     * @link https://www.php.net/manual/en/zookeeper.setdeterministicconnorder.php
+     * @link https://www.php.net/manual/zh/zookeeper.setdeterministicconnorder.php
      *
      * @return bool
      */

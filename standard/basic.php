@@ -3,7 +3,7 @@
 /**
  * @deprecated 5.3
  * Loads a PHP extension at runtime
- * @link https://php.net/manual/en/function.dl.php
+ * @link https://php.net/manual/zh/function.dl.php
  * @param string $library <p>
  * This parameter is only the filename of the
  * extension to load which also depends on your platform. For example,
@@ -40,7 +40,7 @@ function dl ($library) {}
 
 /**
  * Sets the process title
- * @link https://php.net/manual/en/function.cli-set-process-title.php
+ * @link https://php.net/manual/zh/function.cli-set-process-title.php
  * @param string $title <p>
  * The new title.
  * </p>
@@ -51,7 +51,7 @@ function cli_set_process_title ($title) {}
 
 /**
  * Returns the current process title
- * @link https://php.net/manual/en/function.cli-get-process-title.php
+ * @link https://php.net/manual/zh/function.cli-get-process-title.php
  * @return string Return a string with the current process title or <b>NULL</b> on error.
  * @since 5.5
  */
@@ -62,13 +62,13 @@ function cli_get_process_title () {}
  * @param mixed $value
  * @return bool
  * @since 7.1
- * @link https://php.net/manual/en/function.is-iterable.php
+ * @link https://php.net/manual/zh/function.is-iterable.php
  */
 function is_iterable($value) {}
 
 /**
  * Encodes an ISO-8859-1 string to UTF-8
- * @link https://php.net/manual/en/function.utf8-encode.php
+ * @link https://php.net/manual/zh/function.utf8-encode.php
  * @param string $data <p>
  * An ISO-8859-1 string.
  * </p>
@@ -83,7 +83,7 @@ function utf8_encode ($data) {}
  * @since 4.0
  * @since 5.0
 to single-byte ISO-8859-1
- * @link https://php.net/manual/en/function.utf8-decode.php
+ * @link https://php.net/manual/zh/function.utf8-decode.php
  * @param string $data <p>
  * An UTF-8 encoded string.
  * </p>
@@ -93,7 +93,7 @@ function utf8_decode ($data) {}
 
 /**
  * Clear the most recent error
- * @link https://php.net/manual/en/function.error-clear-last.php
+ * @link https://php.net/manual/zh/function.error-clear-last.php
  * @since 7.0
  */
 function error_clear_last () {}
@@ -135,7 +135,7 @@ function sapi_windows_cp_is_utf8() {}
  *
  * If VT100 support is enabled, it is possible to use control sequences as they are known from the VT100 terminal.
  * They allow the modification of the terminal's output. On Windows these sequences are called Console Virtual Terminal Sequences.
- * @link https://php.net/manual/en/function.sapi-windows-vt100-support.php
+ * @link https://php.net/manual/zh/function.sapi-windows-vt100-support.php
  * @param resource $stream
  * @param bool $enable [optional]<p>
  *
@@ -156,13 +156,13 @@ function sapi_windows_vt100_support ($stream, $enable) {}
  * Since PHP 4.0.2, <b>__FILE__</b> always contains an
  * absolute path with symlinks resolved whereas in older versions it contained relative path
  * under some circumstances.
- * @link https://php.net/manual/en/language.constants.predefined.php
+ * @link https://php.net/manual/zh/language.constants.predefined.php
  */
 define ('__FILE__', '', true);
 
 /**
  * The current line number of the file.
- * @link https://php.net/manual/en/language.constants.predefined.php
+ * @link https://php.net/manual/zh/language.constants.predefined.php
  */
 define ('__LINE__', 0, true);
 
@@ -174,7 +174,7 @@ define ('__LINE__', 0, true);
  * Note that as of PHP 5.4 __CLASS__ works also in traits. When used
  * in a trait method, __CLASS__ is the name of the class the trait
  * is used in.
- * @link https://php.net/manual/en/language.constants.predefined.php
+ * @link https://php.net/manual/zh/language.constants.predefined.php
  */
 define ('__CLASS__', '', true);
 
@@ -182,14 +182,14 @@ define ('__CLASS__', '', true);
  * The function name. (Added in PHP 4.3.0) As of PHP 5 this constant
  * returns the function name as it was declared (case-sensitive). In
  * PHP 4 its value is always lowercased.
- * @link https://php.net/manual/en/language.constants.predefined.php
+ * @link https://php.net/manual/zh/language.constants.predefined.php
  */
 define ('__FUNCTION__', '', true);
 
 /**
  * The class method name. (Added in PHP 5.0.0) The method name is
  * returned as it was declared (case-sensitive).
- * @link https://php.net/manual/en/language.constants.predefined.php
+ * @link https://php.net/manual/zh/language.constants.predefined.php
  */
 define ('__METHOD__', '', true);
 
@@ -198,7 +198,7 @@ define ('__METHOD__', '', true);
  * returns the trait as it was declared (case-sensitive). The trait name includes the namespace
  * it was declared in (e.g. Foo\Bar).
  * @since 5.4
- * @link https://php.net/manual/en/language.constants.predefined.php
+ * @link https://php.net/manual/zh/language.constants.predefined.php
  */
 define ('__TRAIT__', '', true);
 
@@ -208,7 +208,7 @@ define ('__TRAIT__', '', true);
  * to dirname(__FILE__). This directory name
  * does not have a trailing slash unless it is the root directory.
  * @since 5.3
- * @link https://php.net/manual/en/language.constants.predefined.php
+ * @link https://php.net/manual/zh/language.constants.predefined.php
  */
 define ('__DIR__', '', true);
 
@@ -216,7 +216,7 @@ define ('__DIR__', '', true);
  * The name of the current namespace (case-sensitive). This constant
  * is defined in compile-time (Added in PHP 5.3.0).
  * @since 5.3
- * @link https://php.net/manual/en/language.constants.predefined.php
+ * @link https://php.net/manual/zh/language.constants.predefined.php
  */
 define ('__NAMESPACE__', '', true);
 
