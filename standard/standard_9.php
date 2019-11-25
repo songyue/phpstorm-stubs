@@ -878,18 +878,17 @@ class AssertionError extends Error {
 function assert_options($what, $value = null) { }
 
 /**
- * Compares two "PHP-standardized" version number strings
+ * version_compare — 对比两个「PHP 规范化」的版本数字字符串
  * @link https://php.net/manual/zh/function.version-compare.php
  * @param string $version1 <p>
- * First version number.
+ * 第一个版本数。
  * </p>
  * @param string $version2 <p>
- * Second version number.
+ * 第二个版本数。
  * </p>
  * @param string $operator [optional] <p>
- * If you specify the third optional operator
- * argument, you can test for a particular relationship. The
- * possible operators are: &lt;,
+ * 如果你指定了可选的第三个参数 operator，
+ * 你可以测试两者的特定关系。 可以的操作符分别是： &lt;,
  * lt, &lt;=,
  * le, &gt;,
  * gt, &gt;=,
@@ -899,17 +898,16 @@ function assert_options($what, $value = null) { }
  * ne respectively.
  * </p>
  * <p>
- * This parameter is case-sensitive, so values should be lowercase.
+ * 此参数区分大小写，它的值应该是小写的。
  * </p>
- * @return int|bool By default, version_compare returns
- * -1 if the first version is lower than the second,
- * 0 if they are equal, and
- * 1 if the second is lower.
+ * @return int|bool 默认情况下，
+ * 在第一个版本低于第二个时，version_compare() 返回 -1；
+ * 如果两者相等，返回 0；
+ * 第二个版本更低时则返回 1。
  * </p>
  * <p>
- * When using the optional operator argument, the
- * function will return true if the relationship is the one specified
- * by the operator, false otherwise.
+ * 当使用了可选参数 operator 时，如果关系是操作符所指定的那个，
+ * 函数将返回 TRUE，否则返回 FALSE。
  * @since 4.1
  * @since 5.0
  */

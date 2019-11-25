@@ -574,12 +574,12 @@ function filetype ($filename) {}
 function file_exists ($filename) {}
 
 /**
- * Tells whether the filename is writable
+ * 判断给定的文件名是否可写
  * @link https://php.net/manual/zh/function.is-writable.php
  * @param string $filename <p>
- * The filename being checked.
+ * 要检查的文件名称。
  * </p>
- * @return bool true if the filename exists and is
+ * @return bool 如果文件 filename 存在并且可写则返回 TRUE。
  * writable.
  * @since 4.0
  * @since 5.0
