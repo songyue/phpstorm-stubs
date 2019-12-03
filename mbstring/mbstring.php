@@ -179,18 +179,15 @@ function mb_http_output ($encoding = null) {}
 function mb_detect_order ($encoding_list = null) {}
 
 /**
- * Set/Get substitution character
+ * 设置/获取替代字符
  * @link https://php.net/manual/zh/function.mb-substitute-character.php
  * @param int|string $substrchar [optional] <p>
- * Specify the Unicode value as an integer,
- * or as one of the following strings:<ul>
- * <li>"none" : no output
- * <li>"long": Output character code value (Example: U+3000, JIS+7E7E)
- * <li>"entity": Output character entity (Example: Ȁ)
- * @return bool|int|string If substchar is set, it returns true for success,
- * otherwise returns false.
- * If substchar is not set, it returns the Unicode value,
- * or "none" or "long".
+ * 指定 Unicode 值为一个 integer，或者是以下字符串中的一个:<ul>
+ * <li>"none" : 不输出
+ * <li>"long": 输出字符代码的值（比如：U+3000、JIS+7E7E）
+ * <li>"entity": 输出字符的实体（比如：&#x200;）
+ * @return bool|int|string 如果设置了 substchar，在成功时返回 TRUE，失败时返回 FALSE。
+ * 如果没有设置 substchar，它将返回当前设置。
  * @since 4.0.6
  * @since 5.0
  */

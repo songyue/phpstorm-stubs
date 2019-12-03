@@ -249,14 +249,13 @@ function debug_zval_dump ($variable) {}
 function print_r ($expression, $return = null) {}
 
 /**
- * Returns the amount of memory allocated to PHP
+ * 返回分配给 PHP 的内存量
  * @link https://php.net/manual/zh/function.memory-get-usage.php
  * @param bool $real_usage [optional] <p>
- * Set this to true to get the real size of memory allocated from
- * system. If not set or false only the memory used by
- * emalloc() is reported.
+ * 如果设置为 TRUE，获取系统分配总的内存尺寸，包括未使用的页。
+ * 如果未设置或者设置为 FALSE，仅仅报告实际使用的内存量。
  * </p>
- * @return int the memory amount in bytes.
+ * @return int 返回内存量字节数。
  * @since 4.3.2
  * @since 5.0
  */
@@ -407,14 +406,14 @@ function hrtime($get_as_number = FALSE) {}
 function php_strip_whitespace ($filename) {}
 
 /**
- * Gets the value of a configuration option
+ * ini_get — 获取一个配置选项的值
  * @link https://php.net/manual/zh/function.ini-get.php
  * @link https://php.net/manual/zh/ini.list.php
  * @param string $varname <p>
- * The configuration option name.
+ * 配置选项名称。
  * </p>
- * @return string the value of the configuration option as a string on success, or
- * an empty string on failure or for null values.
+ * @return 成功是返回配置选项值的字符串，null 的值则返回空字符串。
+ * 如果配置选项不存在，将会返回 FALSE。
  * @since 4.0
  * @since 5.0
  */

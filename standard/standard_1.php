@@ -619,7 +619,7 @@ function substr_replace ($string, $replacement, $start, $length = null) {}
 function quotemeta ($str) {}
 
 /**
- * Make a string's first character uppercase
+ * 使字符串的第一个字符大写
  * @link https://php.net/manual/zh/function.ucfirst.php
  * @param string $str <p>
  * The input string.

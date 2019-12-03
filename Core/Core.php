@@ -74,21 +74,19 @@ function strlen ($string) {}
 function strcmp ($str1, $str2) {}
 
 /**
- * Binary safe string comparison of the first n characters
+ * 二进制安全比较字符串开头的若干个字符
  * @link https://php.net/manual/zh/function.strncmp.php
  * @param string $str1 <p>
- * The first string.
+ * 第一个字符串。
  * </p>
  * @param string $str2 <p>
- * The second string.
+ * 第二个字符串。
  * </p>
  * @param int $len <p>
- * Number of characters to use in the comparison.
+ * 最大比较长度。
  * </p>
- * @return int &lt; 0 if <i>str1</i> is less than
- * <i>str2</i>; &gt; 0 if <i>str1</i>
- * is greater than <i>str2</i>, and 0 if they are
- * equal.
+ * @return 如果 <i>str1</i> 小于 <i>str2</i> 返回 < 0；
+ * 如果 <i>str1</i> 大于 <i>str2</i> 返回 > 0；如果两者相等，返回 0。
  * @since 4.0
  * @since 5.0
  */
@@ -553,14 +551,13 @@ function is_a ($object, $class_name, $allow_string = FALSE) {}
 function get_class_vars ($class_name) {}
 
 /**
- * Gets the properties of the given object
+ * 返回由对象属性组成的关联数组
  * @link https://php.net/manual/zh/function.get-object-vars.php
  * @param object $object <p>
  * An object instance.
  * </p>
- * @return array an associative array of defined object accessible non-static properties
- * for the specified <i>object</i> in scope. If a property have
- * not been assigned a value, it will be returned with a null value.
+ * @return array  返回范围内指定对象的已定义对象可访问非静态属性的关联数组。
+ * 如果尚未为属性分配值，则将返回NULL值
  * @since 4.0
  * @since 5.0
  */

@@ -466,35 +466,34 @@ function sscanf ($str, $format, &...$_) {}
 function fscanf ($handle, $format, &$_ = null) {}
 
 /**
- * Parse a URL and return its components
+ * 解析 URL，返回其组成部分
  * @link https://php.net/manual/zh/function.parse-url.php
  * @param string $url <p>
- * The URL to parse. Invalid characters are replaced by
- * _.
+ * 要解析的 URL。无效字符将使用 _ 来替换。
  * </p>
  * @param int $component [optional] <p>
- * Specify one of PHP_URL_SCHEME,
+ * 指定 PHP_URL_SCHEME,
  * PHP_URL_HOST, PHP_URL_PORT,
  * PHP_URL_USER, PHP_URL_PASS,
  * PHP_URL_PATH, PHP_URL_QUERY
- * or PHP_URL_FRAGMENT to retrieve just a specific
- * URL component as a string.
+ * 或 PHP_URL_FRAGMENT 的其中一个来获取 URL 中指定的部分的
+ * 字符串.
  * </p>
- * @return array|string|int|null|false On seriously malformed URLs, parse_url() may return FALSE.
- * If the component parameter is omitted, an associative array is returned.
- * At least one element will be present within the array. Potential keys within this array are:
- * scheme - e.g. http
+ * @return array|string|int|null|false 对严重不合格的 URL，parse_url() 可能会返回 FALSE。
+ * 如果省略了 component 参数，将返回一个关联数组 array，在目前至少会有一个元素在该数组中。
+ * 数组中可能的键有以下几种：
+ * scheme - 如 http
  * host 
  * port
  * user
  * pass
  * path
- * query - after the question mark ?
- * fragment - after the hashmark #
+ * query - 在问号 ? 之后
+ * fragment - 在散列符号 # 之后
  * </p>
  * <p>
- * If the component parameter is specified a
- * string is returned instead of an array.
+ * 如果指定了 component 参数， parse_url() 返回一个 string （或在指定为 PHP_URL_PORT 时返回一个 integer）
+ * 而不是 array。如果 URL 中指定的组成部分不存在，将会返回 NULL。
  * @since 4.0
  * @since 5.0
  */

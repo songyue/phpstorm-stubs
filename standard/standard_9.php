@@ -202,18 +202,18 @@ function array_flip(array $array) { }
 function array_change_key_case(array $input, $case = null) { }
 
 /**
- * Pick one or more random entries out of an array
+ * 从数组中随机取出一个或多个单元
  * @link https://php.net/manual/zh/function.array-rand.php
  * @param array $input <p>
- * The input array.
+ * 输入的数组。
  * </p>
  * @param int $num_req [optional] <p>
- * Specifies how many entries you want to pick.
+ * 指明了你想取出多少个单元。
  * </p>
- * @return mixed If you are picking only one entry, array_rand
- * returns the key for a random entry. Otherwise, it returns an array
- * of keys for the random entries. This is done so that you can pick
- * random keys as well as values out of the array.
+ * @return mixed
+ * 如果只取出一个，array_rand() 返回随机单元的键名。
+ * 否则就返回包含随机键名的数组。 完成后，就可以根据随机的键获取数组的随机值。
+ * 取出数量如果超过 array 的长度，就会导致 E_WARNING 错误，并返回 NULL。
  * @since 4.0
  * @since 5.0
  */

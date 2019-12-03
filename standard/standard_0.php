@@ -1408,20 +1408,19 @@ function strspn ($subject, $mask, $start = null, $length = null) {}
 function strcspn ($str1, $str2, $start = null, $length = null) {}
 
 /**
- * Tokenize string
- * Note that only the first call to strtok uses the string argument.
- * Every subsequent call to strtok only needs the token to use, as it keeps track of where it is in the current string.
- * To start over, or to tokenize a new string you simply call strtok with the string argument again to initialize it.
- * Note that you may put multiple tokens in the token parameter.
- * The string will be tokenized when any one of the characters in the argument are found.
+ * 标记分割字符串
+ * 注意仅第一次调用 strtok 函数时使用 string 参数。后来每次调用 strtok，都将只使用 token 参数，
+ * 因为它会记住它在字符串 string 中的位置。 如果要重新开始分割一个新的字符串，
+ * 你需要再次使用 string 来调用 strtok 函数，以便完成初始化工作。注意可以在 token 参数中使用多个字符。
+ * 字符串将被该参数中任何一个字符分割。
  * @link https://php.net/manual/zh/function.strtok.php
  * @param string $str [optional] <p>
- * The string being split up into smaller strings (tokens).
+ * 被分成若干子字符串的原始字符串。
  * </p>
  * @param string $token <p>
- * The delimiter used when splitting up str.
+ * 分割str时使用的分解字符
  * </p>
- * @return string A string token.
+ * @return string 标记后的字符串
  * @since 4.0
  * @since 5.0
  */
